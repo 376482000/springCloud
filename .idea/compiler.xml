@@ -10,10 +10,12 @@
         <module name="eurekaserver" />
         <module name="hystrix" />
         <module name="nativeconfigserver" />
+        <module name="configclient" />
         <module name="ribbon" />
         <module name="eurekaclient" />
         <module name="zuul" />
         <module name="nativeconfigclient" />
+        <module name="configserver" />
         <module name="feign" />
         <module name="consumer" />
         <module name="resttemplate" />
@@ -23,6 +25,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="com.zqf" options="-parameters" />
+      <module name="configclient" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />

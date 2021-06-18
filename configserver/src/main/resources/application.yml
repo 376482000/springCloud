@@ -1,0 +1,22 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/376482000/springCloud.git
+          searchPaths: config
+          username: 376482000@qq.com
+          password: 1213xxyy
+          clone-on-start: true
+      label: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
